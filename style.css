@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Trad:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+:root{
+    --font: Funnel Sans;
+}
+body{
+    background: linear-gradient(to top left, #2E3A4D, #4CB1C8, #A3CEDC, #ffffff);
+    min-height: 100vh;
+    color: white;
+    font-family: var(--font);
+}
+.card{
+    background: linear-gradient(to top left, #4CB1C8, #A3CEDC, #dedede);
+    width: 25%;
+    padding: 30px;
+    margin: 50px auto 0;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+}
+.card .search img{
+    width: 20px;
+}
+.card .search input{
+    padding: 10px 20px;
+    border: none;
+    font-family: var(--font);
+    outline: none;
+    width: 70%;
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+.card .search button{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: transparent;
+    transition: 0.2s ease-in-out;
+}
+.card .search button:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+
+.card .search{
+    padding: 5px 10px;
+    border-radius:20px ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card .weather-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card .weather-img img{
+    width: 200px;
+}
+.card .temp{
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font);
+}
+.humidity, .wind-speed{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+}
+.humidity-data, .wind-speed-data{
+    margin-left: 20px;
+}
+.card .other-units{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.card .other-units img{
+    width: 40px;
+}
+.card .country-name{
+    font-size: 2.6rem;
+    width: fit-content;
+    margin: 15px auto 0;
+    padding: 4px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    background: linear-gradient(rgba(255,255,255,0.2)) ;
+}
