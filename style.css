@@ -65,12 +65,12 @@ body{
     font-family: var(--font);
 }
 .humidity, .wind-speed{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    justify-content: space-around;   
 }
 .humidity-data, .wind-speed-data{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .card .other-units{
     margin: 40px;
@@ -80,7 +80,7 @@ body{
     justify-content: space-between;
 }
 .card .other-units img{
-    width: 40px;
+    width: 30px;
 }
 .card .country-name{
     font-size: 2.6rem;
@@ -90,4 +90,7 @@ body{
     border-radius: 6px;
     font-weight: 600;
     background: linear-gradient(rgba(255,255,255,0.2)) ;
+}
+.unit-text{
+    font-size: 1rem;
 }
